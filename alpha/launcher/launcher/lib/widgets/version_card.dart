@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../providers/launcher_provider.dart';
@@ -18,11 +17,11 @@ class VersionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    
+
     return Card(
       elevation: isSelected ? 4 : 2,
-      color: isSelected 
-          ? theme.colorScheme.primaryContainer 
+      color: isSelected
+          ? theme.colorScheme.primaryContainer
           : theme.colorScheme.surface,
       margin: const EdgeInsets.symmetric(vertical: 8),
       child: InkWell(
@@ -45,9 +44,7 @@ class VersionCard extends StatelessWidget {
                   size: 24,
                 ),
               ),
-              
               const SizedBox(width: 16),
-              
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,7 +52,8 @@ class VersionCard extends StatelessWidget {
                     Text(
                       version.name,
                       style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                        fontWeight:
+                            isSelected ? FontWeight.bold : FontWeight.normal,
                       ),
                     ),
                     const SizedBox(height: 4),
@@ -68,7 +66,6 @@ class VersionCard extends StatelessWidget {
                   ],
                 ),
               ),
-              
               if (isSelected)
                 Icon(
                   Icons.check_circle,
@@ -100,11 +97,11 @@ class VersionCard extends StatelessWidget {
       case 'release':
         return Icons.check_circle;
       case 'beta':
-        return Icons.beta;
+        return Icons.bug_report;
       case 'alpha':
         return Icons.flash_on;
       default:
-        return Icons.package;
+        return Icons.archive;
     }
   }
 }
