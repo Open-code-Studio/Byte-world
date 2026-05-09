@@ -1,0 +1,65 @@
+{
+  "color-space-for-untagged-svg-colors" : "display-p3",
+  "fill" : "automatic",
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "display-p3:0.36035,0.66078,0.96783,1.00000"
+          },
+          "image-name" : "Union 3.png",
+          "name" : "Union 3",
+          "opacity" : 1,
+          "position" : {
+            "scale" : 0.7,
+            "translation-in-points" : [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "fill" : {
+            "solid" : "display-p3:0.32644,0.82351,0.94914,1.00000"
+          },
+          "image-name" : "Union 2.png",
+          "name" : "Union 2",
+          "position" : {
+            "scale" : 0.8,
+            "translation-in-points" : [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "image-name" : "Union.png",
+          "name" : "1",
+          "position" : {
+            "scale" : 0.9,
+            "translation-in-points" : [
+              0,
+              10.875
+            ]
+          }
+        }
+      ],
+      "name" : "1",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [
+      "macOS"
+    ]
+  }
+}
