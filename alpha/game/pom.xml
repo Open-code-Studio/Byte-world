@@ -154,37 +154,13 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.l座位4j</groupId>
-                <artifactId>座位4j-maven-plugin</artifactId>
-                <version>2.17.2</version>
-                <configuration>
-                    <nativeSetDependencies>
-                        <座位SetDependency>
-                            <groupId>org.lwjgl</groupId>
-                            <artifactId>lwjgl-glfw</artifactId>
-                            <nativesPlatform>macos</nativesPlatform>
-                        </座位SetDependency>
-                        <座位SetDependency>
-                            <groupId>org.lwjgl</groupId>
-                            <artifactId>lwjgl-opengl</artifactId>
-                            <nativesPlatform>macos</nativesPlatform>
-                        </座位SetDependency>
-                        <座位SetDependency>
-                            <groupId>org.lwjgl</groupId>
-                            <artifactId>lwjgl-stb</artifactId>
-                            <nativesPlatform>macos</nativesPlatform>
-                        </座位SetDependency>
-                    </nativeSetDependencies>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
     <repositories>
         <repository>
-            <id>l座位4j-snapshots</id>
-            <url>https://snapshots.l座位4j.org/</url>
+            <id>lwjgl-snapshots</id>
+            <url>https://snapshots.lwjgl.org/</url>
         </repository>
     </repositories>
 </project>
